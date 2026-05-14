@@ -12,15 +12,18 @@
     <div class="container">
         <header>
             <h1>Diário de Bordo</h1>
-            <button id="btnInstalar" hidden>Instalar App</button>
+            <button id="btnInstalar" hidden="hidden">Instalar App</button>
         </header>
 
         <main>
             <section class="form-section">
                 <h2>Nova Entrada</h2>
                 <form id="formDiario">
+                    <label for="titulo" hidden="hidden">Título</label>
                     <input type="text" id="titulo" placeholder="Título da atividade" required>
+                    <label for="data" hidden="hidden">Data</label>
                     <input type="date" id="data" required>
+                    <label for="descricao" hidden="hidden">Descrição</label>
                     <textarea id="descricao" rows="4" placeholder="Descreva o que aconteceu..." required></textarea>
                     <button type="submit">Salvar Registro</button>
                 </form>

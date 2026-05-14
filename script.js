@@ -62,8 +62,6 @@ window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
     // Guarda o evento para ser disparado depois
     promptInstalacao = e;
-    // Mostra o botão na nossa UI
-    btnInstalar.removeAttribute('hidden');
 });
 
 btnInstalar.addEventListener('click', async () => {
