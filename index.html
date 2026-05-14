@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diário de Bordo</title>
+    <!-- Link para o Manifest do PWA -->
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Diário de Bordo</h1>
+            <button id="btnInstalar" hidden>Instalar App</button>
+        </header>
+
+        <main>
+            <section class="form-section">
+                <h2>Nova Entrada</h2>
+                <form id="formDiario">
+                    <input type="text" id="titulo" placeholder="Título da atividade" required>
+                    <input type="date" id="data" required>
+                    <textarea id="descricao" rows="4" placeholder="Descreva o que aconteceu..." required></textarea>
+                    <button type="submit">Salvar Registro</button>
+                </form>
+            </section>
+
+            <section class="list-section">
+                <h2>Meus Registros</h2>
+                <ul id="listaRegistros">
+                    <!-- As entradas aparecerão aqui via JavaScript -->
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
