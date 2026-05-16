@@ -40,4 +40,11 @@ Após a aplicação das técnicas acima, um novo relatório do Lighthouse foi ge
 **Conclusão:**
 A técnica de minificação trouxe o maior impacto na fluidez do Parse do documento, enquanto o uso do formato `.webp` com `lazy loading` garantiu que a métrica de "Largest Contentful Paint (LCP)" atingisse a excelência. O projeto agora carrega instantaneamente e consome uma fração da banda original.
 
-*(Os prints de Antes e Depois foram enviados nos anexos da atividade, estando também disponíveis na pasta "screenshots").*
+
+### **Comparativos**
+
+Antes:
+![analise-antes.png](screenshots/analise-antes.png)
+
+Depois
+![analise-depois.png](screenshots/analise-depois.png)
