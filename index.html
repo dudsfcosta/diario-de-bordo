@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Diário de Bordo</title>
-    <!-- Link para o Manifest do PWA -->
+    <meta name="description" content="Aplicativo PWA para registro de atividades diárias">
     <link rel="manifest" href="./manifest.json">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="container">
-        <header>
-            <h1>Diário de Bordo</h1>
-            <button id="btnInstalar" hidden="hidden">Instalar App</button>
+        <header style="display:flex;gap:15px;align-items:center"><img src="./icons/icon-192x192.webp"
+                alt="Logotipo do Diário de Bordo" loading="lazy" width="40" height="40">
+            <h1>Diário de Bordo</h1><button id="btnInstalar" hidden aria-label="Instalar Aplicativo">Instalar
+                App</button>
         </header>
-
         <main>
             <section class="form-section">
                 <h2>Nova Entrada</h2>
-                <form id="formDiario">
-                    <label for="titulo" hidden="hidden">Título</label>
-                    <input type="text" id="titulo" placeholder="Título da atividade" required>
-                    <label for="data" hidden="hidden">Data</label>
-                    <input type="date" id="data" required>
-                    <label for="descricao" hidden="hidden">Descrição</label>
-                    <textarea id="descricao" rows="4" placeholder="Descreva o que aconteceu..." required></textarea>
-                    <button type="submit">Salvar Registro</button>
+                <form id="formDiario"><input type="text" id="titulo" aria-label="Título da atividade"
+                        placeholder="Título da atividade" required> <input type="date" id="data"
+                        aria-label="Data da atividade" required> <textarea id="descricao"
+                        aria-label="Descrição da atividade" rows="4" placeholder="Descreva o que aconteceu..."
+                        required></textarea> <button type="submit" aria-label="Salvar Registro">Salvar Registro</button>
                 </form>
             </section>
-
             <section class="list-section">
                 <h2>Meus Registros</h2>
-                <ul id="listaRegistros">
-                    <!-- As entradas aparecerão aqui via JavaScript -->
-                </ul>
+                <ul id="listaRegistros" aria-live="polite"></ul>
             </section>
         </main>
     </div>
     <script src="./script.js"></script>
 </body>
+
 </html>

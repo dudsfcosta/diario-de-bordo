@@ -20,7 +20,7 @@
   ],
   "screenshots": [
     {
-      "scr": "screenshots/home.png",
+      "src": "screenshots/home.png",
       "sizes": "1971x1031",
       "type": "image/png",
       "form_factor": "narrow",
