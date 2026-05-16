@@ -24,6 +24,12 @@ As seguintes melhorias foram implementadas no código:
    - O `script.js` sofreu minificação, tendo variáveis encurtadas e espaços de compilação reduzidos.
 3. **Limpeza de Código:** Remoção de comentários desnecessários no ambiente de produção.
 
+4. **Melhorias de Acessibilidade (A11y):**
+   - Inclusão de atributos `aria-label` em todos os campos de formulário e botões, garantindo suporte completo a leitores de tela.
+   - Adição do atributo `aria-live="polite"` na lista de registros para anunciar adições dinâmicas de conteúdo.
+   - Ajuste na paleta de cores (botões e bordas) para garantir uma taxa de contraste superior a 4.5:1, conforme as diretrizes WCAG AA.
+   - Adição da tag `<meta name="description">` para melhor indexação e contexto.
+   
 ## 🚀 3. Reanálise e Resultados (Pós-Otimização)
 Após a aplicação das técnicas acima, um novo relatório do Lighthouse foi gerado:
 - **Performance:** 100
